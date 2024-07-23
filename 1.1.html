@@ -1,0 +1,183 @@
+
+<html>
+<!-- Heading of the website -->
+<head>
+	<style>
+		/* Heading and Paragraph Styles */
+		h1 {text-align: center;}
+		p {text-align: center;}
+
+		.reset:after {
+			content: "";
+			display: table;
+			clear: both
+		}
+
+		/* Navigation Bar Style */
+		.navigation-bar {display: flex; position: sticky; align-items: center; justify-content: space-between;}
+		.navigation-list {display: flex; list-style: none;}
+		.navigation-list li {margin-right: 20px;}
+
+		/* Cover Image Style */
+		.cover-image-container {position: relative; margin-left: auto; margin-right: auto; width: 50%; padding: 10px}
+		.standard-image {display: block; width: 100%; height: auto;}
+		.overlay-text-container {position: absolute; top: 0; bottom: 0; left: 0; right: 0; height: 100%; width: 100%; opacity: 0; transition: .5s ease;}
+		.overlay-text {color: yellow; font-size: 100%; position: relative; top: 50%; transform: translate(0%, -50%); text-align: center;}
+		.cover-image-container:hover .overlay-text-container {opacity: 1}
+
+		/* Profile Picture Style */
+		.profile-picture-container {position: relative; padding: 10px; margin-left: auto; margin-right: auto; width: 10%;}
+		.circle-border-image {display: block; width: 100%; height: auto; border-radius: 50%;}
+
+		/* Introduction Text Style */
+		.intro-text-container {position: relative; margin-left: auto; margin-right: auto; height: max-content; width: 50%; padding: 10px}
+		.intro-text {color: darkblue; font-size: 20px; position: relative; height: line-height; width: 100%; text-align: center;}
+
+		/* Divider Style */
+		.divider-container {position: relative; margin-top: 10px; margin-bottom: 10px; margin-left: auto; margin-right: auto;height: 0;}
+		.divider {width: 25%;}
+
+		/* Showcase Images Style */
+		.showcase-images-container {display: table; position: relative; margin-left: auto; margin-right: auto; width: 50%; padding: 3px;}
+
+		.showcase-image {display: table-cell; float: left; height: auto; width: 50%; box-sizing: border-box;}
+
+		.showcase-image-text {display: table-cell; position: absolute; float: left; height: ; width: 50%; text-align: center; top: 50%; font-size: 100%; transform: translate(100%, -50%)}
+
+		.showcase-gallery {display: inline-block; float: left; height: auto; width: 16.66666%; box-sizing: border-box; padding: 3px;}
+
+		@media only screen and (max-width: 1000px)
+		{ .showcase-gallery { width: 20% } }
+		@media only screen and (max-width: 900px)
+		{ .showcase-gallery { width: 25% } }
+
+		@media only screen and (max-width: 800px)
+		{ .showcase-gallery { width: 33.33333% } }
+
+		@media only screen and (max-width: 700px)
+		{ .showcase-gallery { width: 50% } }
+
+		@media only screen and (max-width: 600px)
+		{ .showcase-gallery { width:100% } }
+
+		.showcase-gallery-text {text-align: center; padding: 6px}
+	</style>
+
+	<!-- Website Title -->
+	<title>
+		Dhanushka's Website
+	</title>
+</head>
+
+<!-- Contents of the website -->
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navigation-bar">
+		<ul class="navigation-list">
+			<li>About</li>
+			<li>Work</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+
+	<!-- Cover Image & Overlay Text-->
+	<div class="cover-image-container">
+		<img src="D.B.Perera Background Animation 001.gif" alt="Falling Stars" class="standard-image">
+		<div class="overlay-text-container">
+			<div class="overlay-text">Hey, I'm Dhanushka</div>
+		</div>
+	</div>
+
+	<!-- Profile Picture -->
+	<div class="profile-picture-container">
+		<img src="D.B.Perera Profile Picture.jpg" alt="Profile Picture" class="circle-border-image">
+	</div>
+
+	<!-- Introduction Text -->
+	<div class="intro-text-container">
+		<div class="intro-text">I am a full-stack web developer (apparently)</div>
+	</div>
+
+	<!-- Divider -->
+	<div class="divider-container">
+		<hr class="divider">
+	</div>
+
+	<!-- Projects Display Text-->
+	<div class="intro-text-container">
+		<div class="intro-text">Here's what I've done so far...</div>
+	</div>
+
+	<!-- Projects Display -->
+ 	<div class="showcase-images-container">
+		<div class="showcase-image">
+			<img src="Defect Bright.png" alt="Defect Bright" class="standard-image">
+		</div>
+		<div class="showcase-image-text">
+			Defect Bright
+		</div>
+	</div>
+	<div class="reset"></div>
+
+ 	<div class="showcase-images-container">
+		<div class="showcase-image">
+			<img src="Game Boarders.png" alt="Game Boarders" class="standard-image">
+		</div>
+		<div class="showcase-image-text">
+			Game Boarders: The Anti-Boardgame!
+		</div>
+	</div>
+	<div class="reset"></div>
+
+	<!-- Divider -->
+	<div class="divider-container">
+		<hr class="divider">
+	</div>
+
+	<!--  -->
+	<div class="intro-text-container">
+		<div class="intro-text">My photos</div>
+	</div>
+
+	<div class="showcase-images-container">
+		<div class="showcase-gallery">
+			<img src="Mary_Artwork_1_2022-09-17.png" alt="Mary Concept Art" class="standard-image">
+			<div class="showcase-text-description">
+				Concept Art for Mary, a 15cm tall doll
+			</div>
+		</div>
+		<div class="showcase-gallery">
+			<img src="Mary 3D Model.png" alt="Mary Blender 3D Model" class="standard-image">
+			<div class="showcase-text-description">
+				3D Model of Mary in Blender
+			</div>
+		</div>
+		<div class="showcase-gallery">
+			<img src="Latte Art.jpg" alt="Latte Art" class="standard-image">
+			<div class="showcase-text-description">
+				Latte Art of a leaf using full cream milk
+			</div>
+		</div>
+		<div class="showcase-gallery">
+			<img src="Art Drawing 1.jpg" alt="Art Drawing 1" class="standard-image">
+			<div class="showcase-text-description">
+				Drawing of a performer in a 5 minute pose
+			</div>
+		</div>
+		<div class="showcase-gallery">
+			<img src="Art Drawing 2.jpg" alt="Art Drawing 2" class="standard-image">
+			<div class="showcase-text-description">
+				Drawing of a performer in a 10 minute pose
+			</div>
+		</div>
+		<div class="showcase-gallery">
+			<img src="Art Drawing 3.jpg" alt="Art Drawing 3" class="standard-image">
+			<div class="showcase-text-description">
+				Drawing of a performer in a 20 minute pose
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
